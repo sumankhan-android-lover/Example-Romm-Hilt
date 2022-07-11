@@ -1,4 +1,4 @@
-package com.kadirkuruca.newsapp.util
+package com.webskitters.client.example_romm_hilt.utils
 
 import android.content.Context
 import android.net.ConnectivityManager

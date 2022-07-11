@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Example-Romm-Hilt"
+rootProject.name = "Room With Hilt"
 include ':app'
