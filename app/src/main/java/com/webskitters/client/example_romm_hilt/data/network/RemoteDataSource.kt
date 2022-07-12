@@ -1,9 +1,8 @@
 package com.webskitters.client.example_romm_hilt.data.network
 
 import android.content.Context
-import android.provider.SyncStateContract
 import com.webskitters.client.example_romm_hilt.BuildConfig
-import com.webskitters.client.example_romm_hilt.app.BASE_URL
+import com.webskitters.client.example_romm_hilt.app.MyConstants.API_CONST.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

@@ -17,6 +17,7 @@ buildscript {
     ext.fragment_version = '1.4.1'
     ext.firebase_bom_version = "30.1.0"
     ext.room_version = "2.4.2"
+    ext.libphonenumber_version = "8.12.32"
 
     dependencies {
         //navigation args

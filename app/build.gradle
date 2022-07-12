@@ -84,4 +84,7 @@ dependencies {
     //room
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    //number validation country wise
+    implementation "com.googlecode.libphonenumber:libphonenumber:$libphonenumber_version"
 }

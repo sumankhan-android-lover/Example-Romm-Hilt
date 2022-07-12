@@ -5,6 +5,7 @@ import androidx.annotation.IdRes
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
+import androidx.navigation.fragment.findNavController
 
 fun NavController.navigateSafe(
     @IdRes resId: Int,
