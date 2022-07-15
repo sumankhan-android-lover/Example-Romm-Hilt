@@ -19,6 +19,7 @@
             android:padding="@dimen/dimens_8dp"
             tools:listitem="@layout/item_news"
             tools:itemCount="8"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:orientation="horizontal"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -32,11 +32,11 @@ fun Context.hideSoftKeyboard(activity: Activity) {
  * Visibility modifiers and check functions
  */
 
-fun View.isVisible(): Boolean = visibility == View.VISIBLE
+fun View.isVisible(): Boolean = this.visibility == View.VISIBLE
 
-fun View.isGone(): Boolean = visibility == View.GONE
+fun View.isGone(): Boolean = this.visibility == View.GONE
 
-fun View.isInvisible(): Boolean = visibility == View.INVISIBLE
+fun View.isInvisible(): Boolean = this.visibility == View.INVISIBLE
 
 
 fun String.showShortToast(context: Context) {

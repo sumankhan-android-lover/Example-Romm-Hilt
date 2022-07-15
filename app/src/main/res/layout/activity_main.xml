@@ -11,5 +11,17 @@
         layout="@layout/main_content">
     </include>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/network_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimens_12sp"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"/>
+
+    <!--android:visibility="gone"-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

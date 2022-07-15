@@ -3,7 +3,7 @@ package com.frndzcode.client.example_room_hilt.utils
 import java.text.SimpleDateFormat
 import java.util.*
 
-class DateUtil{
+class DateUtils{
 
     companion object{
         fun changeDateFormat(strDate: String?): String {
