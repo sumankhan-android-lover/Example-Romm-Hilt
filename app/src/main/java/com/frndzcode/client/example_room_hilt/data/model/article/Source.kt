@@ -1,4 +1,4 @@
-package com.frndzcode.client.example_room_hilt.data.model
+package com.frndzcode.client.example_room_hilt.data.model.article
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

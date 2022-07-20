@@ -2,11 +2,14 @@ package com.frndzcode.client.example_room_hilt.utils.custom
 
 import android.app.Activity
 import android.content.Context
+import android.content.pm.PackageInfo
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.net.ConnectivityManager
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Base64
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
@@ -15,9 +18,12 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
+import com.frndzcode.client.example_room_hilt.BuildConfig
 import com.google.android.material.snackbar.Snackbar
 import com.frndzcode.client.example_room_hilt.data.network.Resource
 import com.frndzcode.client.example_room_hilt.utils.helper.SingleClickListener
+import java.security.MessageDigest
+import java.security.NoSuchAlgorithmException
 
 /**
  * Hides the soft input keyboard from the screen
@@ -37,6 +43,17 @@ fun View.isVisible(): Boolean = this.visibility == View.VISIBLE
 fun View.isGone(): Boolean = this.visibility == View.GONE
 
 fun View.isInvisible(): Boolean = this.visibility == View.INVISIBLE
+
+fun View.makeVisible() {
+    visibility = View.VISIBLE
+}
+fun View.makeGone() {
+    visibility = View.GONE
+}
+fun View.makeInvisible() {
+    visibility = View.INVISIBLE
+}
+
 
 
 fun String.showShortToast(context: Context) {
@@ -179,6 +196,26 @@ fun View.getBitmap(): Bitmap {
     draw(canvas)
     canvas.save()
     return bmp
+}
+
+/**
+ * Extension method to get a facebook hash key
+ * @sample : requireActivity().facebookHash()
+ */
+fun Context.facebookHash() {
+    // Add code to print out the key hash
+    try {
+        val info: PackageInfo = this.packageManager.getPackageInfo(BuildConfig.APPLICATION_ID, PackageManager.GET_SIGNATURES)
+        for (signature in info.signatures) {
+            val md: MessageDigest = MessageDigest.getInstance("SHA")
+            md.update(signature.toByteArray())
+            showELog("KeyHash: ${Base64.encodeToString(md.digest(), Base64.DEFAULT)}")
+        }
+    } catch (e: PackageManager.NameNotFoundException) {
+        showELog("KeyHash:$e")
+    } catch (e: NoSuchAlgorithmException) {
+        showELog("KeyHash: $e")
+    }
 }
 
 

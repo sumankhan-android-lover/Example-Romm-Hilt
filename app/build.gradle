@@ -65,6 +65,9 @@ dependencies {
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
+    //circle image view
+    implementation "de.hdodenhof:circleimageview:$circle_imageview_version"
+
     //Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
@@ -86,4 +89,9 @@ dependencies {
 
     //number validation country wise
     implementation "com.googlecode.libphonenumber:libphonenumber:$libphonenumber_version"
+
+    //social media login
+    implementation 'com.facebook.android:facebook-android-sdk:14.1.0' //facebook
+
+
 }

@@ -6,6 +6,7 @@
         <entry key="../../../../../layout/custom_preview.xml" value="0.11956521739130435" />
         <entry key="app/src/main/res/drawable-v24/ic_head_back.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_image_default.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_notification.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_settings.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_notification.xml" value="0.1" />
@@ -14,6 +15,7 @@
         <entry key="app/src/main/res/layout/fragment_base.xml" value="0.1765625" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.17222222222222222" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_news.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/layout/main_content.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/layout/progressbar_dialog.xml" value="0.1765625" />
@@ -26,5 +28,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>

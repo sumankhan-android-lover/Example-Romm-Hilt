@@ -1,7 +1,7 @@
 package com.frndzcode.client.example_room_hilt.data.database
 
 import androidx.room.TypeConverter
-import com.frndzcode.client.example_room_hilt.data.model.Source
+import com.frndzcode.client.example_room_hilt.data.model.article.Source
 
 class Converters {
 
