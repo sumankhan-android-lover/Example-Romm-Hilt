@@ -12,6 +12,19 @@
         android:layout_height="match_parent"
         tools:context=".ui.fragment.SettingsFragment">
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.5"
+            android:text="Take picture"
+            android:textColor="@color/white"
+            android:background="@color/green"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/google"

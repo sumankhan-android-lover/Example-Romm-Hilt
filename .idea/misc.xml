@@ -10,12 +10,14 @@
         <entry key="app/src/main/res/drawable-v24/ic_notification.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_settings.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_notification.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_outline_camera.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_base.xml" value="0.1765625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_base.xml" value="0.1765625" />
+        <entry key="app/src/main/res/layout/fragment_bottom_sheet_upload_document.xml" value="0.1765625" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.17222222222222222" />
-        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_news.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/layout/main_content.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/layout/progressbar_dialog.xml" value="0.1765625" />

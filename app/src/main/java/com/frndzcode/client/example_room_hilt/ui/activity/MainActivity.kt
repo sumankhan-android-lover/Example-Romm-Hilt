@@ -15,10 +15,7 @@ import com.facebook.login.LoginResult
 import com.frndzcode.client.example_room_hilt.R
 import com.frndzcode.client.example_room_hilt.app.MyConstants.SOCIAL_MEDIA.FACEBOOK
 import com.frndzcode.client.example_room_hilt.utils.NetworkLiveStatusUtils
-import com.frndzcode.client.example_room_hilt.utils.custom.isGone
-import com.frndzcode.client.example_room_hilt.utils.custom.makeVisible
-import com.frndzcode.client.example_room_hilt.utils.custom.showDLog
-import com.frndzcode.client.example_room_hilt.utils.custom.showELog
+import com.frndzcode.client.example_room_hilt.utils.custom.*
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main_content.*
@@ -79,6 +76,7 @@ class MainActivity : BaseActivity() {
                     header_text.makeVisible()
                     header_text.text = "Settings"
                     back_fragment.makeVisible()
+                    setting_right.makeGone()
                 }
             }
         }
