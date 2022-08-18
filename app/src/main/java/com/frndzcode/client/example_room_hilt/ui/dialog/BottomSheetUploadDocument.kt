@@ -6,13 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import com.frndzcode.client.example_room_hilt.R
 import com.frndzcode.client.example_room_hilt.databinding.FragmentBottomSheetUploadDocumentBinding
-import com.frndzcode.client.example_room_hilt.ui.interfaces.InterfaceDocumentUpload
+import com.frndzcode.client.example_room_hilt.ui.interfaces.DocumentUploadCallBack
 import com.frndzcode.client.example_room_hilt.utils.DataBindingUtils.Companion.putContentView
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class BottomSheetUploadDocument : BottomSheetDialogFragment() {
     private lateinit var binding: FragmentBottomSheetUploadDocumentBinding
-    private var documentInterface: InterfaceDocumentUpload? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,19 +24,18 @@ class BottomSheetUploadDocument : BottomSheetDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        documentInterface = activity as? InterfaceDocumentUpload?
 
         binding.apply {
             documentUpload.setOnClickListener {
-                documentInterface?.selectDocument()
+               DocumentUploadCallBack.onDocumentClicked.selectDocument()
             }
 
             cameraUpload.setOnClickListener {
-                documentInterface?.selectCameraDocument()
+                DocumentUploadCallBack.onDocumentClicked.selectCameraDocument()
             }
 
             galleryUpload.setOnClickListener {
-                documentInterface?.selectGalleryDocument()
+                DocumentUploadCallBack.onDocumentClicked.selectGalleryDocument()
             }
         }
     }

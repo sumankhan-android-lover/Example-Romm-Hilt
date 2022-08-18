@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path  name="docs" path="Android/datacom.frndzcode.client.example_room_hilt/files/documents/" />
+    <external-path  name="pictures" path="Android/data/com.frndzcode.client.example_room_hilt/files/pictures/" />
+
+</paths>

@@ -30,5 +30,20 @@ class MyConstants{
         const val GOOGLE = "GOOGLE"
     }
 
+    object STATIC_OBJ{
+        const val DATA = 1
+        const val EXTRA = 11
+        const val DOCTOR = 1
+        const val DEPARTMENT = 2
+        const val LOADING = 0
+        const val NO_DATA = -1
+        const val NO_INTERNET = -2
+        const val DEFAULT_SEARCH = 0
+        const val CHECK_PERMISSIONS = 0x12
+        const val PICK_DOCUMENT = 0x45
+        const val PICK_GALLERY = 0x46
+        const val PICK_CAMERA = 0x47
+    }
+
 }
 

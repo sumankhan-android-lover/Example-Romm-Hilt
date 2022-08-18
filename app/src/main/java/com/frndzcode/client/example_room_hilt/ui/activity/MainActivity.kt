@@ -242,5 +242,13 @@ class MainActivity : BaseActivity() {
             }
         }
 
+        navHostFragment.let { navFragment ->
+            navFragment.childFragmentManager.primaryNavigationFragment?.onActivityResult(
+                requestCode,
+                resultCode,
+                data
+            )
+        }
+
     }
 }
