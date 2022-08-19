@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.frndzcode.client.example_room_hilt.R
 import com.frndzcode.client.example_room_hilt.databinding.FragmentBottomSheetUploadDocumentBinding
-import com.frndzcode.client.example_room_hilt.ui.interfaces.DocumentUploadCallBack
+import com.frndzcode.client.example_room_hilt.ui.callbacks.DocumentUploadCallBack
 import com.frndzcode.client.example_room_hilt.utils.DataBindingUtils.Companion.putContentView
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 

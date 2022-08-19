@@ -50,7 +50,7 @@ class MainActivity : BaseActivity() {
     //handle toolbar
     private val navigationDestListener =
         NavController.OnDestinationChangedListener{ _,destination,_->
-            back_fragment.visibility = View.GONE
+            back_fragment.makeGone()
             notification_icon_head.isGone()
             setting_right.isGone()
             header_text.isGone()
@@ -69,6 +69,8 @@ class MainActivity : BaseActivity() {
                     header_text.makeVisible()
                     header_text.text = "Notifications"
                     back_fragment.makeVisible()
+                    notification_icon_head.makeGone()
+                    setting_right.makeGone()
                 }
 
                 R.id.settingsFragment -> {

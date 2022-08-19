@@ -1,4 +1,7 @@
-package com.frndzcode.client.example_room_hilt.ui.interfaces
+package com.frndzcode.client.example_room_hilt.ui.callbacks
+
+import android.content.Intent
+import java.io.File
 
 class DocumentUploadCallBack {
     companion object {
@@ -19,8 +22,8 @@ class DocumentUploadCallBack {
         }
 
         interface OnGetDocumentData {
-            fun getGalleryPhotos()
-            fun getCameraPhotos()
+            fun getGalleryPhotos(data:Intent?)
+            fun getCameraPhotos(capture:File?)
         }
     }
 }
