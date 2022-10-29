@@ -69,7 +69,17 @@ class SettingsFragment : BaseFragment() {
         }
 
         binding.google.setOnClickListener {
+            (requireActivity() as MainActivity).callGoogleLogin { isSuccess: Boolean, loginUsingType: String, socialLoginFName: String, socialLoginLName: String, socialLoginEmail: String, socialLoginImage: String, socialAuthKey: String,socialId:String ->
+                if (isSuccess) {
+                    newsViewModel.fName.set(socialLoginFName)
+                    newsViewModel.lName.set(socialLoginLName)
+                    newsViewModel.userEmail.set(socialLoginEmail)
+                    newsViewModel.socialId.set(socialId)
+                    newsViewModel.socialType.set(loginUsingType)
+                    newsViewModel.setSocialMediaUserData()
 
+                }
+            }
         }
 
         binding.linkedin.setOnClickListener {
@@ -78,7 +88,6 @@ class SettingsFragment : BaseFragment() {
 
         binding.takePhoto.setOnClickListener {
             selectPhotoType(false)
-            //getProfilePicture?.init()
         }
 
         DocumentUploadCallBack.onGetDocumentData(object : DocumentUploadCallBack.Companion.OnGetDocumentData{

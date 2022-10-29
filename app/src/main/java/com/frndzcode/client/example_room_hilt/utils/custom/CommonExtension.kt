@@ -31,7 +31,7 @@ import java.security.NoSuchAlgorithmException
 
 fun Context.hideSoftKeyboard(activity: Activity) {
     val imm = this.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-    imm.hideSoftInputFromWindow(activity.currentFocus!!.windowToken, 0)
+    imm.hideSoftInputFromWindow(activity.currentFocus?.windowToken, 0)
 }
 
 /**

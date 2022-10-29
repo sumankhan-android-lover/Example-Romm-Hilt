@@ -14,8 +14,12 @@ import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
 import com.frndzcode.client.example_room_hilt.R
 import com.frndzcode.client.example_room_hilt.app.MyConstants.SOCIAL_MEDIA.FACEBOOK
+import com.frndzcode.client.example_room_hilt.app.MyConstants.SOCIAL_MEDIA.GOOGLE
 import com.frndzcode.client.example_room_hilt.utils.NetworkLiveStatusUtils
 import com.frndzcode.client.example_room_hilt.utils.custom.*
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount
+import com.google.android.gms.tasks.Task
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main_content.*
@@ -230,6 +234,13 @@ class MainActivity : BaseActivity() {
         fbLoginInstance.registerCallback(fbCallBackManager, call)
     }
 
+    //google
+    fun callGoogleLogin(listener: (Boolean, String, String, String, String, String, String, String) -> Unit) {
+        this.socialLoginListener = listener
+        loginType = GOOGLE
+
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         Log.e("resultCode",""+resultCode)
@@ -241,6 +252,8 @@ class MainActivity : BaseActivity() {
                     resultCode,
                     data
                 )
+
+                GOOGLE -> handleSignInResult(GoogleSignIn.getSignedInAccountFromIntent(data))
             }
         }
 
@@ -252,5 +265,9 @@ class MainActivity : BaseActivity() {
             )
         }
 
+    }
+
+    private fun handleSignInResult(signedInAccountFromIntent: Task<GoogleSignInAccount>) {
+        TODO("Not yet implemented")
     }
 }

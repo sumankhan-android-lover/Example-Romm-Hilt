@@ -23,6 +23,8 @@ class MyConstants{
         const val FB_CLIENT_TOKEN = "6c60889eb6b91ff5e5af96990d86279b"
 
         //google
+        const val CLIENT_ID = "683662534936-aaildetn2ki417u0m9n9i90vnuei9s1j.apps.googleusercontent.com"
+        const val CLIENT_SECRET = "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"
 
         //login type
         const val FACEBOOK = "FACEBOOK"

@@ -13,7 +13,6 @@ import com.frndzcode.client.example_room_hilt.app.MyConstants.STATIC_OBJ.PICK_DO
 import com.frndzcode.client.example_room_hilt.app.MyConstants.STATIC_OBJ.PICK_GALLERY
 import com.frndzcode.client.example_room_hilt.ui.activity.BaseActivity
 import com.frndzcode.client.example_room_hilt.ui.callbacks.DocumentUploadCallBack
-import com.frndzcode.client.example_room_hilt.utils.custom.showELog
 import com.frndzcode.client.example_room_hilt.utils.helper.ExternalDocument
 
 open class BaseFragment : Fragment() {
@@ -63,7 +62,7 @@ open class BaseFragment : Fragment() {
         })
     }
 
-    fun selectPhotoType(selectMultiple:Boolean){
+    fun selectPhotoType(selectMultiple: Boolean) {
         getProfilePicture = ExternalDocument(
             requireActivity(),
             requireActivity().supportFragmentManager,
@@ -87,9 +86,5 @@ open class BaseFragment : Fragment() {
                 }
             }
         }
-    }
-
-    companion object {
-
     }
 }
